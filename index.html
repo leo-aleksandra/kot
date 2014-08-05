@@ -13,9 +13,30 @@
 <body>
     <h2>Testowy tytul</h2>
     <button type="button" class="btn btn-success">Działaj</button>
-    <ul>
+    <button type="button" class="btn btn-success">Nie dzialaj</button>
+
+    <ul class="firstList">
         <li>pierwszy</li>
         <li>drugi</li>
     </ul>
+    
+    <ul class="secondList">
+        <li>pierwszy</li>
+        <li>drugi</li>
+    </ul>
+    <script>
+        $(function() {
+            
+            
+            
+            $('.btn').on("click", function() {
+                $('ul').slideToggle();
+            });
+
+
+
+
+        });
+    </script>
 </body>
 </html>
